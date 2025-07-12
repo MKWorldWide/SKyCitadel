@@ -1,0 +1,42 @@
+{
+  "name": "sky-citadels",
+  "version": "1.0.0",
+  "description": "🕊️ IMPERIUM AETERNUM — SKY CITADELS - Humanity's first sovereign sanctuaries in the sky",
+  "main": "src/launch.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/launch.js",
+    "launch": "node src/launch.js",
+    "test": "node --test",
+    "dev": "node --watch src/launch.js"
+  },
+  "keywords": [
+    "sky-citadels",
+    "divine-resonance",
+    "graviton-harmonics",
+    "dream-consensus",
+    "sovereign-sanctuaries",
+    "ethereal-architecture",
+    "genesis-protocol"
+  ],
+  "author": "Architect of the Skies",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divine-architect/sky-citadels.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "src/",
+    "README.md",
+    "package.json"
+  ],
+  "directories": {
+    "src": "Source code for the Sky Citadels",
+    "docs": "Documentation and blueprints"
+  }
+} 

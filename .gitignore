@@ -72,6 +72,9 @@ jspm_packages/
 .nuxt
 dist
 
+# mkdocs build output
+site/
+
 # Gatsby files
 .cache/
 public

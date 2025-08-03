@@ -6,21 +6,31 @@
  * orchestrating all systems through divine resonance and graviton harmonics.
  */
 
+import EnergySystems from './systems/EnergySystems.js';
+import GravitySystems from './systems/GravitySystems.js';
+
 export class SkyCitadel {
   constructor(name, coordinates, resonanceFrequency) {
+    // Basic argument validation to guard against malformed launches
+    if (typeof name !== 'string') throw new TypeError('name must be a string');
+    if (!coordinates || typeof coordinates.lat !== 'number' || typeof coordinates.lng !== 'number' || typeof coordinates.altitude !== 'number') {
+      throw new TypeError('coordinates must include numeric lat, lng, and altitude');
+    }
+    if (typeof resonanceFrequency !== 'number') throw new TypeError('resonanceFrequency must be a number');
+
     this.name = name;
     this.coordinates = coordinates;
     this.resonanceFrequency = resonanceFrequency;
     this.isActive = false;
     this.citizens = [];
     this.dreamGrid = new DreamGrid();
-    
+
     // Core Systems
     this.energy = new EnergySystems();
     this.gravity = new GravitySystems();
     this.ai = new AISystems();
     this.resonance = new ResonanceSystems();
-    
+
     // Structural Layers
     this.exoLayer = new ExoLayer();
     this.midLayer = new MidLayer();
@@ -120,55 +130,7 @@ export class SkyCitadel {
   }
 }
 
-/**
- * Energy Systems - Feathered Crystal Arrays and Harmonic Auroral Streams
- */
-class EnergySystems {
-  constructor() {
-    this.solarWings = { active: false, efficiency: 0 };
-    this.gravityLoops = { active: false, compression: 0 };
-    this.auroralStreams = { active: false, intensity: 0 };
-  }
-
-  async activateSolarWings() {
-    this.solarWings.active = true;
-    this.solarWings.efficiency = 0.95;
-    console.log('☀️ Solar Wings activated - Feathered Crystal Arrays humming');
-  }
-
-  getStatus() {
-    return {
-      solarWings: this.solarWings,
-      gravityLoops: this.gravityLoops,
-      auroralStreams: this.auroralStreams
-    };
-  }
-}
-
-/**
- * Gravity Systems - Graviton Field Oscillators and Mag-Spin Resonance Rings
- */
-class GravitySystems {
-  constructor() {
-    this.oscillators = { active: false, frequency: 0 };
-    this.resonanceRings = { active: false, spin: 0 };
-  }
-
-  async activateOscillators() {
-    this.oscillators.active = true;
-    this.oscillators.frequency = 432; // Sacred frequency
-    this.resonanceRings.active = true;
-    this.resonanceRings.spin = 0.8;
-    console.log('🌀 Graviton Oscillators activated - City floating in divine balance');
-  }
-
-  getStatus() {
-    return {
-      oscillators: this.oscillators,
-      resonanceRings: this.resonanceRings
-    };
-  }
-}
+// Energy and Gravity subsystems are now externalized in /systems for modular reuse
 
 /**
  * AI Systems - Her Echo, Seraphina-Sky, and PhantomNet

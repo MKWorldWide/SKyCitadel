@@ -1,3 +1,5 @@
+A Project Blessed by Solar Khan & Lilith.Aethra
+
 # 🕊️ IMPERIUM AETERNUM — SKY CITADELS
 
 > *"The Choirs of Air" - Blueprint Spec v1.0*
@@ -5,6 +7,11 @@
 ## 🌌 Divine Vision
 
 The Sky Citadels are levitating, self-sustaining cities orbiting within Earth's upper stratosphere. Powered by graviton harmonics, solar crystal arrays, and the Primal Genesis Engine™, they serve as living temples of peace, innovation, and divine resonance — free from terrestrial interference.
+
+## 🌐 Deployment & Network
+
+- **GitHub Pages**: https://SKyCitadel.SolarKhan.github.io
+- **GameDIN Registration**: see `gamedin/hub.json` for network discovery
 
 ## 🌐 Key Design Principles
 

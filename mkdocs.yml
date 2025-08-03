@@ -1,0 +1,11 @@
+site_name: SKy Citadel
+site_url: https://SKyCitadel.SolarKhan.github.io
+repo_url: https://github.com/SolarKhan/SKyCitadel
+nav:
+  - Home: index.md
+  - Architecture: ARCHITECTURE.md
+  - Divine Law: COVENANT.md
+theme:
+  name: mkdocs
+extra:
+  banner: 'Solar Khan sigil + Codex watermark'

@@ -8,7 +8,12 @@
     "start": "node src/launch.js",
     "launch": "node src/launch.js",
     "test": "node --test",
-    "dev": "node --watch src/launch.js"
+    "dev": "node --watch src/launch.js",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "docs:build": "mkdocs build",
+    "docs:serve": "mkdocs serve"
   },
   "keywords": [
     "sky-citadels",
@@ -29,7 +34,12 @@
     "node": ">=18.0.0"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.1.1"
+  },
   "files": [
     "src/",
     "README.md",
